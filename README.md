@@ -1,8 +1,12 @@
 # Restaurant Order Scheduler
 
+[![Deploy to GitHub Pages](https://github.com/balabm/Restaurantt3st/actions/workflows/deploy.yml/badge.svg)](https://github.com/balabm/Restaurantt3st/actions/workflows/deploy.yml)
+
 A modern React/Tailwind web application that implements the **Shortest Job First (SJF)** scheduling algorithm for restaurant order management.
 
 🚀 **[Live Demo on GitHub Pages](https://balabm.github.io/Restaurantt3st/)**
+
+> ⚠️ **Note**: If the live demo shows a blank page, GitHub Pages may not be configured. See the [Deployment Guide](./DEPLOYMENT_GUIDE.md) for setup instructions.
 
 ## Features
 
@@ -61,12 +65,34 @@ This application is automatically deployed to GitHub Pages when changes are push
 
 **Live URL**: https://balabm.github.io/Restaurantt3st/
 
-The deployment workflow:
+### Deployment Workflow
+
+The deployment uses GitHub Actions:
 1. Builds the application using Vite
 2. Uploads the build artifacts to GitHub Pages
 3. Deploys to the GitHub Pages environment
 
 See `.github/workflows/deploy.yml` for the deployment configuration.
+
+### Initial Setup Required ⚠️
+
+**Important**: For the deployment to work, GitHub Pages must be configured:
+
+1. Go to **Settings** → **Pages** in your GitHub repository
+2. Under **Build and deployment**:
+   - Set **Source** to **"GitHub Actions"**
+   - Save the settings
+3. Push a commit or re-run the workflow to deploy
+
+For detailed setup instructions, see [`DEPLOYMENT_GUIDE.md`](./DEPLOYMENT_GUIDE.md).
+
+### Troubleshooting
+
+If you see a blank page after deployment:
+- Verify GitHub Pages is enabled with "GitHub Actions" as the source
+- Check that the workflow completed successfully in the Actions tab
+- Clear browser cache and reload (Ctrl+Shift+R or Cmd+Shift+R)
+- Check browser console (F12) for any errors
 
 ## How It Works
 
