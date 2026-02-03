@@ -61,12 +61,34 @@ This application is automatically deployed to GitHub Pages when changes are push
 
 **Live URL**: https://balabm.github.io/Restaurantt3st/
 
-The deployment workflow:
+### Deployment Workflow
+
+The deployment uses GitHub Actions:
 1. Builds the application using Vite
 2. Uploads the build artifacts to GitHub Pages
 3. Deploys to the GitHub Pages environment
 
 See `.github/workflows/deploy.yml` for the deployment configuration.
+
+### Initial Setup Required ⚠️
+
+**Important**: For the deployment to work, GitHub Pages must be configured:
+
+1. Go to **Settings** → **Pages** in your GitHub repository
+2. Under **Build and deployment**:
+   - Set **Source** to **"GitHub Actions"**
+   - Save the settings
+3. Push a commit or re-run the workflow to deploy
+
+For detailed setup instructions, see [`DEPLOYMENT_GUIDE.md`](./DEPLOYMENT_GUIDE.md).
+
+### Troubleshooting
+
+If you see a blank page after deployment:
+- Verify GitHub Pages is enabled with "GitHub Actions" as the source
+- Check that the workflow completed successfully in the Actions tab
+- Clear browser cache and reload (Ctrl+Shift+R or Cmd+Shift+R)
+- Check browser console (F12) for any errors
 
 ## How It Works
 
