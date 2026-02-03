@@ -2,6 +2,8 @@
 
 A modern React/Tailwind web application that implements the **Shortest Job First (SJF)** scheduling algorithm for restaurant order management.
 
+🚀 **[Live Demo on GitHub Pages](https://balabm.github.io/Restaurantt3st/)**
+
 ## Features
 
 - 🎨 **Glassmorphism Design**: Beautiful UI with soft shadows, backdrop blur effects, and gradient backgrounds
@@ -30,6 +32,8 @@ A modern React/Tailwind web application that implements the **Shortest Job First
 
 ## Getting Started
 
+### Local Development
+
 1. Install dependencies:
 ```bash
 npm install
@@ -41,6 +45,28 @@ npm run dev
 ```
 
 3. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Production Build
+
+Build the application for production:
+```bash
+npm run build
+```
+
+The build output will be in the `dist` folder.
+
+## Deployment
+
+This application is automatically deployed to GitHub Pages when changes are pushed to the `main` branch.
+
+**Live URL**: https://balabm.github.io/Restaurantt3st/
+
+The deployment workflow:
+1. Builds the application using Vite
+2. Uploads the build artifacts to GitHub Pages
+3. Deploys to the GitHub Pages environment
+
+See `.github/workflows/deploy.yml` for the deployment configuration.
 
 ## How It Works
 
