@@ -1,8 +1,12 @@
 # Restaurant Order Scheduler
 
+[![Deploy to GitHub Pages](https://github.com/balabm/Restaurantt3st/actions/workflows/deploy.yml/badge.svg)](https://github.com/balabm/Restaurantt3st/actions/workflows/deploy.yml)
+
 A modern React/Tailwind web application that implements the **Shortest Job First (SJF)** scheduling algorithm for restaurant order management.
 
 🚀 **[Live Demo on GitHub Pages](https://balabm.github.io/Restaurantt3st/)**
+
+> ⚠️ **Note**: If the live demo shows a blank page, GitHub Pages may not be configured. See the [Deployment Guide](./DEPLOYMENT_GUIDE.md) for setup instructions.
 
 ## Features
 
